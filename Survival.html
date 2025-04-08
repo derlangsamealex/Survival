@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Zombie Survival</title>
+		<script language="javascript" type="text/javascript" src="Survival Classes.js"></script>
+		<script language="javascript" type="text/javascript" src="Survival.js"></script>
+		<link href="Survival.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="startmenu">
+            <h1 class="title">Zombie Survival</h1>
+            <button onclick=startbtn(); class="startmenu" style="top:30%; left:35%;">START</button>
+            <button class="startmenu" style="top:45%; left:35%;">LOAD</button>
+        </div>
+        <div id="createcharactermenu">
+            <input id="colorbox" type="color" value="#ffff00" style="display:none;">
+            <h1 class="title">create character</h1>  
+            <svg id="createplayer" style="margin: 25%; width: 50%; height:50%; background: grey;">
+                <circle id="circle" cx="50%" cy="50%" r="30%" stroke="black" stroke-width="2" fill="yellow"/>          
+            </svg>
+            <button onclick=simulateClick(colorbox); class="startmenu" style="top:15%; left:35%; font-size:100%;">Change Color</button>
+            <button onclick=initgame(); class="startmenu" style="top:80%; left:35%; ">Confirm</button>
+        </div>
+        <div id="gamemenu">      
+            <div id="subgamemenu1">
+            </div>
+            <div id="subgamemenumain">
+            </div>
+            <div id="subgamemenucontrol">
+              <button id="inv">Inv</button>
+              <svg id="svgmovebtn" width=35% height=84%>
+                <circle cx="50%" cy="50%" r="40%" fill=#555555 ></circle>
+                <circle id="movestick" cx="50%" cy="50%" r="30%" fill=#AAAAAA ></circle>
+                <circle id="movebtn" cx="50%" cy="50%" r="40%" fill-opacity=0></circle>
+              </svg>
+              <button class="controlbtn" id="button1" value=0>A</button>
+              <button class="controlbtn" id="button2" value=0>B</button>
+            </div>
+        </div>
+    </body>
+</html>
