@@ -796,6 +796,7 @@ class Enemy extends Source {
   }
   kill() {
     alert("game over");
+    clearInterval(world.t);
   }
   dropLoot() {
     if(Math.random()>=0.5) {
